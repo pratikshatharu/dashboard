@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="css/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-----top nav bar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 px-4 auto-hiding-navbar fixed-top">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <!---for search bar-->
+            <form class=" search-form d-flex m-auto mt-1 mb-0">
+                <input class="form-control me-2" type="search" placeholder="Type to search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <!---search form end-->
+            <ul class="navbar-nav ml-auto ">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Admin</a>
+                    </li>
+                </ul>
+                <!----for dropdown-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Log out
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">User setting</a></li>
+                        <li><a class="dropdown-item " href="#">Create new account</a></li>
+
+                    </ul>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-----top nav bar end-->
+
+    <!-------right side nav bar-->
+    <div class="row">
+        <div class="col-1">
+            <nav id="sidebar" class="col sidebar">
+                <a href="#" class="navbar-brand">
+                    <img src="school.jpg" alt="photo" class="photo">
+                </a>
+                <ul class="nav flex-column vertical-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home"><i
+                                class="fas fa-house-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#students"><i class="fas fa-user-friends"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teachers"><i class="fas fa-chalkboard-teacher"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#class"><i class="fas fa-book"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#notification"><i class="far fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#setting"><i class="fas fa-cogs"></i></a>
+                    </li>
+
+
+
+
+                </ul>
+            </nav>
+        </div>
+
+
+        <!-----right side nav bar end-->
+        <div class="main col-11">
+            <div class="row first-row">
+                <div class="col-5">
+                    <section id="recently-posted">
+                        <div class="card ">
+                            <div class="card-header">
+                            </div>
+
+                            <div class="card text-white bg-warning">
+                                <div class="card-header">Latest posts</div>
+                                <img src="book1.jpg" alt="photo">
+                                <div class="card-body">
+                                    <h5 class="card-title">School management</h5>
+                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Voluptate velit eveniet eligendi vitae minus iusto nesciunt nihil omnis enim
+                                        eaque qui aliquam ea, dicta in sit tenetur et quae? Error?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-7">
+                    <section id="statistics">
+                        <div class="card">
+                            <div class="card-header">
+                                Graduation
+                                <div class="stats py-3 px-4">
+                                    <div class="py-4">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                                role="progressbar" style="width: 57%" aria-valuenow="57"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="card-text">primary students
+                                        </p>
+
+
+                                    </div>
+                                    <div class="py-4">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                                role="progressbar bg-success" style="width: 67%" aria-valuenow="67"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="card-text">higher level students </p>
+
+
+                                    </div>
+                                    <div class="py-4">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                                role="progressbar bg-success" style="width: 87%" aria-valuenow="87"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="card-text">bachelor students
+                                        </p>
+
+
+                                    </div>
+                                    <div class="py-4">
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                role="progressbar bg-warning" style="width: 95%" aria-valuenow="95"
+                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <p class="card-text">masters students
+                                        </p>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                    </section>
+
+                </div>
+                <div class="container">
+                    <div class="card card-group card-deck img-fluid">
+                        <div class="card-body">
+                            <img src="1.jpg" class="card-img-top ">
+                            <div class="card-body bg-info">
+                                <h4 class="card-title text-center">students</h4>
+                                <p class="card-text text-center">A student is a person who goes</p>
+                                <a href="#" class="btn btn-danger">another page</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="1.jpg" class="card-img-top img-fluid">
+                            <div class="card-body btn-danger">
+                                <h4 class="card-title text-center">Teachers</h4>
+                                <p class="card-text text-center"> A teacher is a person who helps
+                                </p>
+                                <a href="#" class="btn btn-warning">another page</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="1.jpg" class="card-img-top">
+                            <div class="card-body bg-warning">
+                                <h4 class="card-title text-center">principal</h4>
+                                <p class="card-text text-center">A principal is someone </p>
+                                <a href="#" class="btn btn-danger btn-block">another page</a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <img src="1.jpg" class="card-img-top img-fluid">
+                            <div class="card-body bg-success">
+                                <h4 class="card-title text-center">Guardian</h4>
+                                <p class="card-text text-center"> A person who guards, protect</p>
+                                <a href="#" class="btn btn-danger">another page</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
